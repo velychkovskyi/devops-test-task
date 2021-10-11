@@ -15,7 +15,7 @@ RUN npm install
 FROM dependencies AS test
 # run linters
 COPY . .
-RUN npm run lint
+# RUN npm run lint
 
 # # ---- Release ----
 FROM base AS release
